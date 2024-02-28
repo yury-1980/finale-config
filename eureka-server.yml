@@ -1,0 +1,12 @@
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+
+# отключение лишних логов, т.к. не тут не будем создавать и вызывать микросервисы
+logging:
+  level:
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
