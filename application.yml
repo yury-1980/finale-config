@@ -1,5 +1,0 @@
-
-# более короткое отображение логов
-logging:
-  pattern:
-    console: [%-5level] %d{HH:mm:ss} - %msg%n
