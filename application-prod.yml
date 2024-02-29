@@ -11,3 +11,20 @@ spring:
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  #        search:
+  #          backend:
+  #          default:
+  #            directory_provider: filesystem
+  #            indexBase: /data/index/default
+
+  liquibase:
+    change-log: classpath:/db/changelog/master.yaml
+    enabled: true
+Cache:
+  capacity: 15
